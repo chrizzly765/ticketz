@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+.page-header {
+    background-color: rgba(50, 50, 150, 0.5);
+    height: 60px;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+}
+
+.control {
+    flex: 1;
+}
+
+.logout {
+    width: 150px;
+}
+
+.page-content {
+    display: flex;
+}
+
+/* Menu */
+
+.menu {
+    background-color: rgba(150, 250, 250, 0.5);
+    width: 90px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Submenu */
+
+.sub-menu {
+    background-color: rgba(50, 250, 250, 0.5);
+    width: 250px;
+    height: 100vh;
+    padding: 10px 10px 0 20px;
+}
+
+.sub-menu p {
+    font-weight: bolder;
+    padding: 10px 0 10px 0;
+}
+
+.list-item {
+    line-height: 20px;
+    padding: 10px 10px 0 0;
+    display: flex;
+}
+
+.list-item div:nth-child(1) {
+    flex: 0.9;
+}
+
+.spacer {
+    line-height: 25px;
+}
