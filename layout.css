@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,12 +11,13 @@ html,
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9rem;
+    font-family: 'Roboto';
+    font-size: 0.95rem;
 }
 
 .page-header {
-    background-color: rgba(50, 50, 150, 0.5);
+    background-color: #434343;
+    color: #c9cacc;
     height: 60px;
     display: flex;
 }
@@ -32,12 +36,13 @@ body {
 
 .page-content {
     display: flex;
+    justify-items: stretch;
 }
 
 /* Menu */
 
 .menu {
-    background-color: rgba(150, 250, 250, 0.5);
+    background-color: #545454;
     width: 90px;
     height: 100vh;
     display: flex;
@@ -53,10 +58,19 @@ body {
     margin: 10px;
 }
 
+.circle-s {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(20, 20, 20, 0.6);
+    border-radius: 50%;
+    margin: 5px;
+}
+
 /* Submenu */
 
 .sub-menu {
-    background-color: rgba(50, 250, 250, 0.5);
+    background-color: #5e5e5e;
+    color: #c9cacc;
     width: 250px;
     height: 100vh;
     padding: 10px 10px 0 20px;
@@ -79,4 +93,69 @@ body {
 
 .spacer {
     line-height: 25px;
+}
+
+/* content */
+
+.content {
+    background-color: #e6e8e7;
+    flex: 1;
+    padding: 20px 25px 15px 25px;
+}
+
+.content > p {
+    font-size: 1.4rem;
+    padding: 0 0 25px 0;
+}
+
+/* ticket list item */
+
+.ticket-list-item {
+    overflow: hidden;
+
+    /* border-radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    /* box-shadow */
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px;
+}
+
+.ticket-list-item-header {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+}
+
+.ticket-list-item-header div:nth-child(1) {
+    width: 150px;
+}
+
+.ticket-list-item-header div:nth-child(2) {
+    flex: 1;
+}
+
+.sub-title-s {
+    font-size: 0.8rem;
+    color: #b8b8b8;
+    line-height: 20px;
+}
+
+/* .ticket-title div {
+    font-size: 1rem;
+    line-height: 25px;
+} */
+
+.ticket-list-item-footer {
+    background-color: #fafafa;
+    padding: 10px;
+    display: flex;
+}
+
+.ticket-list-item-footer > div {
+    display: flex;
+    width: 200px;
 }
