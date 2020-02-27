@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
 
 * {
     padding: 0;
@@ -11,7 +11,7 @@ html,
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 0.95rem;
 }
 
@@ -143,19 +143,24 @@ body {
     color: #b8b8b8;
     line-height: 20px;
 }
-
+/* FIXME: so net */
 /* .ticket-title div {
     font-size: 1rem;
     line-height: 25px;
 } */
 
 .ticket-list-item-footer {
-    background-color: #fafafa;
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
 }
 
+/* TODO: line height could work */
 .ticket-list-item-footer > div {
+    background-color: #e9e9e9;
+    margin-left: 10px;
     display: flex;
     width: 200px;
+    line-height: 50px;
+    border-right: 1px solid #c4c4c4;
+    /* background-color: lawngreen; */
 }
