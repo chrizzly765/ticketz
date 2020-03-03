@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
 * {
     padding: 0;
@@ -11,7 +11,7 @@ html,
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 0.95rem;
 }
 
@@ -119,9 +119,11 @@ body {
     border-radius: 10px;
 
     /* box-shadow */
-    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 3px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px;
-    box-shadow: rgba(0, 0, 0, 0.8) 0 0 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0 2px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+
+    margin-bottom: 20px;
 }
 
 .ticket-list-item-header {
@@ -130,37 +132,47 @@ body {
     padding: 10px;
 }
 
-.ticket-list-item-header div:nth-child(1) {
+.ticket-state {
     width: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 5px 10px 5px 0;
+    padding-top: 5px;
+    /* border-radius: 10px; */
 }
 
-.ticket-list-item-header div:nth-child(2) {
+.ticket-title {
     flex: 1;
+    font-weight: bold;
 }
 
 .sub-title-s {
     font-size: 0.8rem;
+    font-weight: lighter;
     color: #b8b8b8;
     line-height: 20px;
 }
-/* FIXME: so net */
-/* .ticket-title div {
-    font-size: 1rem;
-    line-height: 25px;
-} */
 
 .ticket-list-item-footer {
-    /* padding: 10px; */
     display: flex;
 }
 
-/* TODO: line height could work */
 .ticket-list-item-footer > div {
     background-color: #e9e9e9;
     margin-left: 10px;
+    padding: 5px;
     display: flex;
     width: 200px;
-    line-height: 50px;
     border-right: 1px solid #c4c4c4;
-    /* background-color: lawngreen; */
+}
+
+/* states */
+
+.bgColorNew {
+    background-color: #76d683;
+}
+
+.bgColorOpen {
+    background-color: #f8902f;
 }
