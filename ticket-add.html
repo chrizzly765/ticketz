@@ -1,12 +1,24 @@
-<html lang="de3">
+<html lang="de">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="layout.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
+        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+
         <title>Ticketsystem Prototype</title>
     </head>
     <body>
-        <div class="container">
+        <div>
             <div class="page-header">
                 <div class="logo">Logo</div>
                 <div class="control">Controls</div>
@@ -46,7 +58,45 @@
                     </div>
                 </div>
 
-                <div class="content"></div>
+                <div class="content">
+                    <p>New Ticket</p>
+                    <div class="ticket-form-new">
+                        <form>
+                            <div class="form-subject-priority">
+                                <div class="form-group form-subject">
+                                    <label for="subject">Problem</label>
+                                    <input type="text" class="form-control" id="subject" />
+                                </div>
+                                <div class="form-priority">
+                                    <label for="priority">Priority</label>
+                                    <select name="priority" id="priority" class="form-control">
+                                        <option>Niedrig</option>
+                                        <option>Mittel</option>
+                                        <option>Hoch</option>
+                                        <option>Sehr hoch</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="issue">Problembeschreibung</label>
+                                <textarea class="form-control" id="issue" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="departments">Abteilung</label>
+                                <select name="departments" id="departments" class="form-control">
+                                    <option>IT</option>
+                                    <option>Grafik</option>
+                                    <option>Prepress</option>
+                                    <option>Technik</option>
+                                </select>
+                            </div>
+                            <div class="btn-bar">
+                                <button type="submit" class="btn btn-success">Abschicken</button>
+                                <button type="button" class="btn btn-cancel">Abbrechen</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

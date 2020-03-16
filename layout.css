@@ -177,3 +177,52 @@ body {
 .bgColorOpen {
     background-color: #f8902f;
 }
+
+/* new ticket */
+
+.ticket-form-new {
+    background-color: #eef0ef;
+    padding: 10px 15px 10px 15px;
+}
+
+.ticket-form-new label {
+    font-size: 0.9rem;
+}
+
+.btn-cancel {
+    background-color: rgb(161, 161, 161) !important;
+}
+
+.btn-bar {
+    margin-top: 20px;
+}
+
+.form-subject-priority {
+    display: flex;
+}
+
+.form-subject {
+    flex: 1;
+    align-items: stretch;
+    padding-right: 20px;
+}
+
+.form-priority label {
+    display: block;
+}
+
+/* .btn-prio-low {
+    background-color: rgb(161, 161, 161) !important;
+}
+
+.btn-prio-moderate {
+    background-color: rgb(185, 143, 143) !important;
+}
+
+.btn-prio-high {
+    background-color: rgb(182, 136, 77) !important;
+}
+
+.btn-prio-urgent {
+    background-color: rgb(204, 43, 43) !important;
+} */
