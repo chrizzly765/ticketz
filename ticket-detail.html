@@ -2,51 +2,112 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
+        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
         <link rel="stylesheet" href="layout.css" />
         <title>Ticketsystem Prototype</title>
     </head>
     <body>
-        <div class="container">
-            <div class="page-header">
-                <div class="logo">Logo</div>
-                <div class="control">Controls</div>
-                <div class="logout">Logout</div>
+        <div class="page-header">
+            <div class="logo">Logo</div>
+            <div class="control">Controls</div>
+            <div class="logout">Logout</div>
+        </div>
+        <div class="page-content">
+            <div class="menu">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
-            <div class="page-content">
-                <div class="menu">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
+
+            <div class="sub-menu">
+                <p>Ticket</p>
+                <div class="list-item">New Ticket</div>
+                <div class="list-item">New</div>
+                <div class="spacer">&nbsp;</div>
+                <div class="spacer">&nbsp;</div>
+                <p>Filter</p>
+                <div class="list-item">
+                    <div>All</div>
+                    <div>171</div>
+                </div>
+                <div class="list-item">
+                    <div>New</div>
+                    <div>12</div>
+                </div>
+                <div class="list-item">
+                    <div>Open</div>
+                    <div>150</div>
+                </div>
+                <div class="list-item">
+                    <div>Closed</div>
+                    <div>9</div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div>
+                    <h1 class="title">Subject</h1>
                 </div>
 
-                <div class="sub-menu">
-                    <p>Ticket</p>
-                    <div class="list-item">New Ticket</div>
-                    <div class="list-item">New</div>
-                    <div class="spacer">&nbsp;</div>
-                    <div class="spacer">&nbsp;</div>
-                    <p>Filter</p>
-                    <div class="list-item">
-                        <div>All</div>
-                        <div>171</div>
+                <h3 class="subtitle">Description title</h3>
+
+                <div class="two-columns">
+                    <div class="column-70">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit inventore incidunt non
+                            aut ab aliquid odit, architecto ipsam nulla reprehenderit quos explicabo deleniti eveniet
+                            vel expedita in veniam. Dolorem, ad.
+                        </p>
+
+                        <form>
+                            <!-- comment function -->
+                            <div class="form-group">
+                                <label for="issue">Comment:</label>
+                                <textarea class="form-control" id="issue" rows="3"></textarea>
+                            </div>
+                            <div class="btn-bar">
+                                <button type="submit" class="btn btn-success">Abschicken</button>
+                                <button type="button" class="btn btn-cancel">Abbrechen</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="list-item">
-                        <div>New</div>
-                        <div>12</div>
-                    </div>
-                    <div class="list-item">
-                        <div>Open</div>
-                        <div>150</div>
-                    </div>
-                    <div class="list-item">
-                        <div>Closed</div>
-                        <div>9</div>
+
+                    <div class="column-30">
+                        <h4 class="itemtitle">Priority</h4>
+                        <p>Hoch</p>
+                        <h4 class="itemtitle">State</h4>
+                        <p>offen</p>
+                        <h4 class="itemtitle">Opened by</h4>
+                        <div class="usertext">
+                            <div class="circle-s">HH</div>
+                            <div>
+                                <p class="sub-title-s">13.03.2020</p>
+                                <p>Herbert Haida</p>
+                            </div>
+                        </div>
+                        <h4 class="itemtitle">Accepted by</h4>
+                        <div class="usertext">
+                            <div class="circle-s"></div>
+                            <div>
+                                <p class="sub-title-s">16.03.2020</p>
+                                <p>Chris Strasjdasm</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="content"></div>
             </div>
         </div>
     </body>

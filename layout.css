@@ -40,6 +40,48 @@ body {
     justify-items: stretch;
 }
 
+/* Neu */
+
+/* Headlines and fonts */
+.title {
+    font-size: 2.6rem;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    padding-bottom: 3px;
+}
+
+.itemtitle {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.two-columns {
+    display: flex;
+}
+
+.column-70 {
+    padding-right: 50px;
+}
+
+.column-30 {
+    /* width: 450px; */
+}
+
+.usertext {
+    padding: 5px;
+    display: flex;
+    width: 200px;
+}
+
 /* Menu */
 
 .menu {
@@ -60,7 +102,7 @@ body {
 }
 
 .circle-s {
-    width: 35px;
+    flex: 0 0 35px;
     height: 35px;
     background-color: rgba(20, 20, 20, 0.6);
     border-radius: 50%;
@@ -102,11 +144,6 @@ body {
     background-color: #e6e8e7;
     flex: 1;
     padding: 20px 25px 15px 25px;
-}
-
-.content > p {
-    font-size: 1.4rem;
-    padding: 0 0 25px 0;
 }
 
 /* ticket list item */
@@ -152,7 +189,8 @@ body {
     font-size: 0.8rem;
     font-weight: lighter;
     color: #b8b8b8;
-    line-height: 20px;
+    line-height: 1.2;
+    margin: 5px 0 1px 0;
 }
 
 .ticket-list-item-footer {
