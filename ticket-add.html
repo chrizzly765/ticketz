@@ -2,7 +2,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="layout.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,15 +13,21 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
         />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" />
+        <link rel="stylesheet" href="layout.css" />
         <title>Ticketsystem Prototype</title>
     </head>
     <body>
         <div>
             <div class="page-header">
-                <div class="logo">Logo</div>
+                <div class="logo">
+                    <a class="a-header-sub-menu" href="ticket-list.html"><img src="" alt="Logo Alt Tag"/></a>
+                </div>
                 <div class="control">Controls</div>
-                <div class="logout">Logout</div>
+                <div class="logout">
+                    <a class="a-header-sub-menu" href="logout">Logout</a>
+                </div>
             </div>
+
             <div class="page-content">
                 <div class="menu">
                     <div class="circle"></div>
@@ -34,40 +39,52 @@
 
                 <div class="sub-menu">
                     <p>Ticket</p>
-                    <div class="list-item">New Ticket</div>
-                    <div class="list-item">New</div>
+                    <div class="list-item">
+                        <a class="a-header-sub-menu" href="ticket-add.html">New Ticket</a>
+                    </div>
+                    <div class="list-item">
+                        <a class="a-header-sub-menu" href="ticket-detail.html">New</a>
+                    </div>
                     <div class="spacer">&nbsp;</div>
                     <div class="spacer">&nbsp;</div>
                     <p>Filter</p>
                     <div class="list-item">
-                        <div>All</div>
+                        <div>
+                            <a class="a-header-sub-menu" href="ticket-list.html">All</a>
+                        </div>
                         <div>171</div>
                     </div>
                     <div class="list-item">
-                        <div>New</div>
+                        <div>
+                            <a class="a-header-sub-menu" href="#">New</a>
+                        </div>
                         <div>12</div>
                     </div>
                     <div class="list-item">
-                        <div>Open</div>
+                        <div>
+                            <a class="a-header-sub-menu" href="#">Open</a>
+                        </div>
                         <div>150</div>
                     </div>
                     <div class="list-item">
-                        <div>Closed</div>
+                        <div>
+                            <a class="a-header-sub-menu" href="#">Closed</a>
+                        </div>
                         <div>9</div>
                     </div>
                 </div>
 
                 <div class="content">
-                    <p>New Ticket</p>
+                    <h1 class="title">New Ticket</h1>
                     <div class="ticket-form-new">
                         <form>
                             <div class="form-subject-priority">
                                 <div class="form-group form-subject">
-                                    <label for="subject">Problem</label>
+                                    <label for="subject">Subject:</label>
                                     <input type="text" class="form-control" id="subject" />
                                 </div>
                                 <div class="form-priority">
-                                    <label for="priority">Priority</label>
+                                    <label for="priority">Priority:</label>
                                     <select name="priority" id="priority" class="form-control">
                                         <option>Niedrig</option>
                                         <option>Mittel</option>
@@ -77,11 +94,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="issue">Problembeschreibung</label>
+                                <label for="issue">Description:</label>
                                 <textarea class="form-control" id="issue" rows="3"></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="departments">Abteilung</label>
+                                <label for="departments">Department:</label>
                                 <select name="departments" id="departments" class="form-control">
                                     <option>IT</option>
                                     <option>Grafik</option>
@@ -91,7 +108,9 @@
                             </div>
                             <div class="btn-bar">
                                 <button type="submit" class="btn btn-success">Abschicken</button>
-                                <button type="button" class="btn btn-cancel">Abbrechen</button>
+                                <button type="button" class="btn btn-cancel">
+                                    <a class="a-button" href="ticket-list.html">Abbrechen</a>
+                                </button>
                             </div>
                         </form>
                     </div>

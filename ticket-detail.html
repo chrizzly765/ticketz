@@ -2,7 +2,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,10 +18,15 @@
     </head>
     <body>
         <div class="page-header">
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <a class="a-header-sub-menu" href="ticket-list.html"><img src="" alt="Logo Alt Tag"/></a>
+            </div>
             <div class="control">Controls</div>
-            <div class="logout">Logout</div>
+            <div class="logout">
+                <a class="a-header-sub-menu" href="logout">Logout</a>
+            </div>
         </div>
+
         <div class="page-content">
             <div class="menu">
                 <div class="circle"></div>
@@ -34,25 +38,37 @@
 
             <div class="sub-menu">
                 <p>Ticket</p>
-                <div class="list-item">New Ticket</div>
-                <div class="list-item">New</div>
+                <div class="list-item">
+                    <a class="a-header-sub-menu" href="ticket-add.html">New Ticket</a>
+                </div>
+                <div class="list-item">
+                    <a class="a-header-sub-menu" href="ticket-detail.html">New</a>
+                </div>
                 <div class="spacer">&nbsp;</div>
                 <div class="spacer">&nbsp;</div>
                 <p>Filter</p>
                 <div class="list-item">
-                    <div>All</div>
+                    <div>
+                        <a class="a-header-sub-menu" href="ticket-list.html">All</a>
+                    </div>
                     <div>171</div>
                 </div>
                 <div class="list-item">
-                    <div>New</div>
+                    <div>
+                        <a class="a-header-sub-menu" href="ticket-detail.html">New</a>
+                    </div>
                     <div>12</div>
                 </div>
                 <div class="list-item">
-                    <div>Open</div>
+                    <div>
+                        <a class="a-header-sub-menu" href="#">Open</a>
+                    </div>
                     <div>150</div>
                 </div>
                 <div class="list-item">
-                    <div>Closed</div>
+                    <div>
+                        <a class="a-header-sub-menu" href="#">Closed</a>
+                    </div>
                     <div>9</div>
                 </div>
             </div>
@@ -73,26 +89,66 @@
                         </p>
 
                         <form>
-                            <!-- comment function -->
+                            <!-- Comment function -->
                             <div class="form-group">
                                 <label for="issue">Comment:</label>
                                 <textarea class="form-control" id="issue" rows="3"></textarea>
                             </div>
                             <div class="btn-bar">
-                                <button type="submit" class="btn btn-success">Abschicken</button>
-                                <button type="button" class="btn btn-cancel">Abbrechen</button>
+                                <button type="submit" class="btn btn-success">Senden</button>
+                                <button type="button" class="btn btn-cancel">
+                                    <a class="a-button" href="ticket-list.html">Abbrechen</a>
+                                </button>
                             </div>
                         </form>
+
+                        <!-- Chat history -->
+                        <div class="user-chat-history">
+                            <div class="circle-s" title="Herbert Haida">HH</div>
+                            <div>
+                                <p class="sub-title-s">Vor 11 Minuten</p>
+                                <p>Herbert Haida</p>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit inventore
+                                    incidunt non aut ab aliquid odit, architecto ipsam nulla reprehenderit quos
+                                    explicabo deleniti eveniet vel expedita in veniam. Dolorem, ad.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="user-chat-history">
+                            <div class="circle-s" title="Christian Strzelczyk">CS</div>
+                            <div>
+                                <p class="sub-title-s">Vor 39 Minuten</p>
+                                <p>Christian Strzelczyk</p>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit inventore
+                                    incidunt non aut ab aliquid odit, architecto ipsam nulla reprehenderit quos
+                                    explicabo deleniti eveniet vel expedita in veniam. Dolorem, ad.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="user-chat-history">
+                            <div class="circle-s" title="Herbert Haida">HH</div>
+                            <div>
+                                <p class="sub-title-s">30.03.2020 13:02</p>
+                                <p>Herbert Haida</p>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit inventore
+                                    incidunt non aut ab aliquid odit, architecto ipsam nulla reprehenderit quos
+                                    explicabo deleniti eveniet vel expedita in veniam. Dolorem, ad.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="column-30">
                         <h4 class="itemtitle">Priority</h4>
-                        <p>Hoch</p>
+                        <p class="p-priority-low">Gering</p>
                         <h4 class="itemtitle">State</h4>
-                        <p>offen</p>
+                        <p>Offen</p>
                         <h4 class="itemtitle">Opened by</h4>
                         <div class="usertext">
-                            <div class="circle-s">HH</div>
+                            <div class="circle-s" title="Herbert Haida">HH</div>
                             <div>
                                 <p class="sub-title-s">13.03.2020</p>
                                 <p>Herbert Haida</p>
@@ -100,10 +156,12 @@
                         </div>
                         <h4 class="itemtitle">Accepted by</h4>
                         <div class="usertext">
-                            <div class="circle-s"></div>
+                            <div class="circle-s" title="Christian Strzelczyk">CS</div>
                             <div>
-                                <p class="sub-title-s">16.03.2020</p>
-                                <p>Chris Strasjdasm</p>
+                                <div>
+                                    <p class="sub-title-s">13.03.2020</p>
+                                    <p>Christian Strzelczyk</p>
+                                </div>
                             </div>
                         </div>
                     </div>

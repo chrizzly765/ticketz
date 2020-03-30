@@ -15,12 +15,33 @@ body {
     font-size: 0.95rem;
 }
 
-/* Test */
 .page-header {
     background-color: #434343;
     color: #c9cacc;
     height: 60px;
     display: flex;
+}
+
+.a-header-sub-menu {
+    color: rgb(201, 202, 204);
+}
+
+.a-header-sub-menu:hover {
+    color: rgb(201, 202, 204);
+    text-decoration: underline;
+}
+
+.a-header-sub-menu:active {
+    text-decoration: underline;
+}
+
+.a-button {
+    color: rgb(255, 255, 255);
+}
+
+.a-button:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .logo {
@@ -40,7 +61,7 @@ body {
     justify-items: stretch;
 }
 
-/* Neu */
+/* Herb */
 
 /* Headlines and fonts */
 .title {
@@ -64,6 +85,19 @@ body {
     line-height: 1.2;
 }
 
+/* Priorities */
+.p-priority-high {
+    color: rgb(200, 0, 0);
+}
+
+.p-priority-middle {
+    color: rgb(200, 141, 0);
+}
+
+.p-priority-low {
+    color: rgb(52, 152, 33);
+}
+
 .two-columns {
     display: flex;
 }
@@ -72,18 +106,21 @@ body {
     padding-right: 50px;
 }
 
-.column-30 {
-    /* width: 450px; */
-}
-
+/* Usertext + Icon and date box */
 .usertext {
     padding: 5px;
     display: flex;
     width: 200px;
 }
 
-/* Menu */
+/* Chat history */
+.user-chat-history {
+    display: flex;
+    height: 100%;
+    margin-top: 20px;
+}
 
+/* Menu */
 .menu {
     background-color: #545454;
     width: 90px;
@@ -102,15 +139,17 @@ body {
 }
 
 .circle-s {
+    display: flex;
     flex: 0 0 35px;
     height: 35px;
+    color: rgb(255, 255, 255);
     background-color: rgba(20, 20, 20, 0.6);
     border-radius: 50%;
+    padding: 8px;
     margin: 5px;
 }
 
 /* Submenu */
-
 .sub-menu {
     background-color: #5e5e5e;
     color: #c9cacc;
@@ -138,7 +177,7 @@ body {
     line-height: 25px;
 }
 
-/* content */
+/* Content */
 
 .content {
     background-color: #e6e8e7;
@@ -146,8 +185,7 @@ body {
     padding: 20px 25px 15px 25px;
 }
 
-/* ticket list item */
-
+/* Ticket list item */
 .ticket-list-item {
     overflow: hidden;
 
@@ -206,8 +244,7 @@ body {
     border-right: 1px solid #c4c4c4;
 }
 
-/* states */
-
+/* States */
 .bgColorNew {
     background-color: #76d683;
 }
@@ -216,8 +253,7 @@ body {
     background-color: #f8902f;
 }
 
-/* new ticket */
-
+/* New ticket */
 .ticket-form-new {
     background-color: #eef0ef;
     padding: 10px 15px 10px 15px;
